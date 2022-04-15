@@ -15,7 +15,7 @@ function getSearchResults(val) {
   }
 }
 
-const apiKey = "4b7e9b48729140beb96394ecf27d892d";
+const apiKey = "25b297422f3b49caa19fdd93e2cd2dd8";
 const url = `
 https://newsapi.org/v2/everything?q=world&apiKey=${apiKey}`;
 
