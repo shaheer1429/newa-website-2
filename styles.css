@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", calibri;
+}
+.mid-nav {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  top: 0%;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  width: 100%;
+  height: 10vh;
+  padding: 20px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  top: 0%;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  width: 100%;
+  height: 10vh;
+  padding: 20px;
+}
+.links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.links a {
+  padding: 7px 30px;
+  text-decoration: none;
+  background: #1967d2;
+  color: white;
+  border-radius: 5px;
+}
+.logo img {
+  height: 55px;
+}
+.nav-icon button {
+  border: none;
+  background: none;
+  font-size: 22px;
+}
+.wrapper {
+  z-index: -1;
+  position: absolute;
+  top: 10vh;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+.sidebar {
+  width: 268px;
+  height: 100vh;
+  position: fixed;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow-y: scroll;
+}
+.side-links {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  gap: 10px;
+  flex-direction: column;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-bottom: 30px;
+}
+.info span {
+  padding: 12px 30px;
+  font-family: "roboto", calibri;
+}
+i {
+  padding-right: 5px;
+}
+.side-links a:nth-child(1) {
+  background: #0000e61f;
+  color: #1967d2;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  font-weight: bold;
+}
+.side-links a {
+  text-decoration: none;
+  padding: 12px 30px;
+  color: black;
+  font-family: "Roboto", calibri;
+}
+.content {
+  padding-top: 100px;
+  width: 80%;
+  min-height: 50vh;
+  margin-left: 268px;
+}
+.wrap {
+  max-width: 90%;
+  margin: auto;
+  height: 100%;
+  padding-bottom: 20px;
+}
+.header h1 {
+  font-family: "Roboto", calibri;
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+.header p {
+  font-family: "Roboto", calibri;
+}
+.cards {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.card {
+  min-height: 10vh;
+  width: 100%;
+  border-radius: 12px;
+  display: flex;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.card .img {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 2;
+}
+.card .news {
+  flex: 2;
+  padding: 25px;
+  order: 1;
+}
+.card img {
+  height: 50%;
+  width: 50%;
+  object-fit: cover;
+  border-radius: 10%;
+}
+.title {
+  font-family: "Roboto", calibri;
+  padding-bottom: 20px;
+}
+.auth {
+  font-family: "Roboto", calibri;
+  color: gray;
+}
+.desc {
+  font-family: "Roboto", calibri;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 10vh;
+}
+li,
+ul {
+  list-style: none;
+  font-family: "Roboto", calibri;
+}
+.more {
+  font-family: "Roboto", calibri;
+  padding: 7px 10px;
+  background: #1967d2;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.1s all;
+}
+@media all and (max-width: 1050px) {
+  nav {
+    display: none;
+  }
+  .content {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .sidebar {
+    transform: translate(-100%);
+    transition: 0.3s all;
+    background: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+      0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+      0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  }
+  .content {
+    z-index: -1;
+    background: white;
+  }
+}
+.error {
+  padding-top: 50px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.error button {
+  padding: 7px 30px;
+  margin-top: 20px;
+  background: #1967d2;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-family: "Roboto", calibri;
+  cursor: pointer;
+}
+.toggler {
+  transform: translate(0%);
+  transition: 0.3s all;
+}
+@media all and (max-width: 650px) {
+  .card .img {
+    display: none;
+  }
+  br {
+    display: none;
+  }
+}
